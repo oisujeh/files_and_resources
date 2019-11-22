@@ -1,0 +1,88 @@
+Guideline for the Rollout of NigeriaMRS 2.0
+Background:
+The beta iteration of the Nigeria Medical Records Systems (NMRS) was released mid 2018 for CDC partners’ use. Partners had mapped their native EMRs with the NMRS and attempted migration of health facility legacy databases to the NMRS. The need to submit weekly data from health facilities to the National Data Repository (NDR) remains priority in PEPFAR Nigeria programs to facilitate near real-time monitoring of the progress of interventions. The current “Surge” programming makes digital data transmission from health facilities to the NDR even critical to enable near real-time tracking of Nigeria’s progress towards achieving epidemic control.
+In addition to digitalized program data management, EMR use can facilitate patient management in a holistic manner by integrating all patient-linked clinical and laboratory information for intelligent Clinical Decision Support (CDS). This can, indeed, potentially enhance the quality of patient care provision, and potentially improve treatment outcomes. 
+Despite the large scale deployment of NMRS in CDC supported facilities, user feedbacks revealed that it was not optimized for routine HIV patient, program and data management, including, critically, generation of the required report to the National Data Repository (NDR). Hence the release of the current re-engineered and enhanced NMRS V2.
+Key NMRS Issues Fixed by V2
+1.	NMRS poor user experiences for patient-level, and facility-level program management
+2.	NMRS export plugin for data reporting the NDR
+3.	NMRS reporting tool
+4.	Improved NMRS work-flow with forms displaying based on patient program area (ART, HTS, PMTCT, HEI)
+5.	Patient ID selection and display
+6.	Legacy drug regimen mapping 
+7.	NMRS migration tool for migrating data from the various legacy EMR systems into NMRS
+
+General Guidelines:
+•	It is important for partners to note that they are required to totally migrate their patients’ data from legacy EMR systems into NMRS and discontinue the use of the legacy EMR systems immediately after the migration is completed. 
+•	All issues identified during this migration process should be immediately logged within 24hours of experiencing such issue on github setup for the NMRS data migration (https://github.com/nmrs-nigeria/datamigration/issues). 
+•	During this process, UMB will ensure all issues reported are resolved immediately and update patch pushed out via the NMRS github. 
+•	All updates must be tested by the reporting individual/partner before the update is pushed to the github, this is ensuring updates don’t cause additional issues when deployed. 
+•	IPs must carry out a post-migration data audit for each of the sites following the process described in the section below (labeled Post Migration Data Audit).
+•	Any identified differences from the audit must be documented and reported immediately 
+
+Post Migration Data Audit:
+The following process will be completed upon completion of migration at each facility.
+1.	Check whether all the data in the legacy is migrated to the new application. To ensure this, compare the number of records between legacy and the new application for each table and views in the database. 
+Approach 
+Count the following details for the indicators listed below from both the legacy EMR and NMRS
+Facility level:
+•	Total number of Patients
+•	Total number of Pharmacy encounter
+•	Total number of Laboratory encounter
+•	Total number of Care Card encounter
+•	Calculated TX_CURR
+Patient level:
+Using the random number table to select a sample of patients from the migrated records. For each of the selected patients, count for the following details in both the legacy EMR and NMRS
+•	Total number of Pharmacy encounter
+•	Total number of Laboratory encounter
+•	Total number of Care Card encounter
+For each of the patients, also check the patient status in both the legacy EMR and NMRS and estimate the total number of active and inactive patients based on the sampled patients. 
+
+2.	Data migrated from the legacy to new application should retain its value and format unless it is not specified to do so. To ensure this, compare data values between legacy and new application’s database.
+Approach
+For each of the randomly selected patients in section 1, compare the following values between the legacy EMR and the NMRS and record any disparities. 
+•	Date of First encounter
+•	Date of Last encounter
+•	Date of first ARV pickup from the current facility
+•	First documented regimen 
+•	Last documented regimen
+•	Date of last lab encounter
+•	Date of first lab encounter
+•	Date of last documented viral load (if available)
+•	Last documented viral load result
+•	Date of first care card encounter
+•	Date of last care card encounter
+•	ART start date (if documented)
+Count the number of patients of the randomly selected patients who scored a 12 out of 12 based on the comparison and then do a proportion of patients with retained data values post migration.
+
+3.	Test the migrated data against the new application. Here cover a maximum number of possible cases. To ensure 100% coverage with respect to data migration verification, use the automated testing tool.
+Approach
+Randomly select 10 folders and run through their records, opening each and every one of the forms of the patients to ensure nothing breaks as you move along with the new NMRS. Document any breaks or errors that are triggered as you go through this and report them accordingly.
+A template will be shared to report the migration progress including the post migration audit reports to CDC.
+
+Training Approach
+
+The following strategy should be adopted for training facility staff on the use of NigeriaMRS
+•	We will encourage that while Health Informatics leads the training, the programs teams should handle the corresponding sections of the training ie. Lab, Pharmacy, M&E, Clinical Care etc.
+•	Training should be facility-based for category 1 and 2 sites (see attached list) to encourage participation of all site staff especially for large facilities – This is with the hope of implementing point of care system in the very near future and encouraging ownership 
+•	A central training may be organized for category 3 sites
+
+
+Migration timelines:
+
+S/N	Activity	Output	Timelines
+1.		Conduct an in-house training on the use of NigeriaMRS for all the HQ staff (all program staff including lab, pharmacy, CoCT)	HQ teams understand and are able to use the NigeriaMRS	20th September 2019
+2.		Conduct an in-house training on the use of NigeriaMRS for all the State teams (all program staff including lab, pharmacy, CoCT)	State teams understand and are able to use the NigeriaMRS	27th September 2019
+Non-Treatment sites (List attached)
+3.		Conduct 1 to 2 days training on the use of NMRS for HTS and PMTCT. This should be specifically for the non-treatment sites 	The concerned staff in these facilities have understanding and is able to use NigeriaMRS	2nd October 2019
+4.		Deploy NigeriaMRS to the sites and begin data entry for HTS and PMTCT	All non-treatment sites use NMRS for documenting HTS and PMTCT activities	11th October 2019
+5.		Begin submitting data for these sites to the NDR	Sites begin the submit data to the NDR for HTS and PMTCT via NigeriaMRS	11th October 2019
+Treatment sites (List attached)
+6.		Conduct 3 to 5 days facility training on the use of NigeriaMRS – see section on training approach above	All concerned facility staff understand and is able to use the NigeriaMRS	30th October 2019
+7.		Complete the migration of all treatment sites from legacy EMR systems to NMRS	All treatment sites use NMRS for capturing patient clinical encounters 	30th November 2019
+8.		Begin submitting data to the NDR from NMRS EMR systems for treatment sites	Treatment sites with NMRS begin submitting data to the NDR using the NigeriaMRS export plugin	25th October 2019
+9.		NDR will not process any files from a non-NMRS EMR for CDC supported sites	All CDC supported sites only use NigeriaMRS for collecting all patient clinical encounter 	1st December 2019
+
+Based on the timelines above, IPs should note the following:
+•	Begin submitting the data to the NDR from NMRS as soon as migration is completed for each site (UMB will monitor this and provide updates routinely on the status of sites submitting data to the NDR from NMRS to CDC)
+•	Migration plan and field test should be finalized this week (9th to 13th September 2019) appropriately
