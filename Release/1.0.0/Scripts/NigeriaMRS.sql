@@ -1,4 +1,4 @@
---PATIENT FLAG Section
+-- PATIENT FLAG Section
 -- drop exisitng tables
 delete from patientflags_flag_tag;
 delete from patientflags_flag;
