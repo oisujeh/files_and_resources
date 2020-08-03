@@ -18,15 +18,9 @@ NMRS Release Note (Version X.X.x)
 
 | Tools | New version | Rollback version\* |
 | --- | --- | --- |
-| NMRS |
- |
- |
-| Apache Tomcat |
- |
- |
-| Mysql |
- |
- |
+| NMRS |    |     |
+| Apache Tomcat |  |  |
+| Mysql |  |   |
 
 \*Rollback version is the version as at the last stable release.
 
