@@ -402,7 +402,7 @@ DELIMITER ;
 
 
 
-UPDATE openmrs.patientflags_flag
+UPDATE patientflags_flag
 SET criteria = 'SELECT p.patient_id
 FROM patient p
 WHERE p.patient_id IN
