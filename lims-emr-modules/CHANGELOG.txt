@@ -1,0 +1,14 @@
+Version 1.0.0
+
+1.Developed and integrated the first version of the LIMS-EMR schema.
+2.Implemented electronic transfer of sample information to the LIMS platform using schema.
+3.Implemented result retrieval from LIMS platform to EMR.
+
+Version 1.0.1
+
+1.fix bugs with limited sample transfer.
+2.Implemented schema validation on EMR.
+3.updated EMR omod and exchange schema with changes on patientID, sample Type and drug regimen.
+4.added validation to manifest page.
+5.implemented remote logging of sample data on a proxy server.
+6.code optimization on sample data exchange between EMR and LIMS.
