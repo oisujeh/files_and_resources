@@ -12,3 +12,8 @@ Version 1.0.1
 4.added validation to manifest page.
 5.implemented remote logging of sample data on a proxy server.
 6.code optimization on sample data exchange between EMR and LIMS.
+
+
+Version 1.0.2
+1. updated created by value on manifest view
+2. updated date created on manifest view
