@@ -17,3 +17,11 @@ Version 1.0.1
 Version 1.0.2
 1. updated created by value on manifest view
 2. updated date created on manifest view
+
+
+Version 1.0.3
+1. better feedback system after sending manifest information.
+2. bug fix on result retrieval for special non-numeric viral-load result.
+3. updated manifest view page.
+4. updated spinner on manifest generation page.
+5. added feature to print manifest result.
