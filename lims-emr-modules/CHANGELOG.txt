@@ -25,3 +25,8 @@ Version 1.0.3
 3. updated manifest view page.
 4. updated spinner on manifest generation page.
 5. added feature to print manifest result.
+
+
+Version 1.0.3.1
+1. bug fix on viral load result field not accepting decimals
+2. updates on result retrieval page.
