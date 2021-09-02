@@ -1,0 +1,57 @@
+{
+      "consumption": {
+        "id": "#consumption",
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "title": "Consumption Schema",
+        "description": "The consumption schema comprises the entire JSON document.",
+        "type": "array",
+        "items": [  
+          {
+            "type": "object",
+            "properties": {
+              "consumptionDate": {
+                "type": "string",
+                "format": "date"
+              },
+              "item": {
+                "type": "string",
+                "description": "item uuid" 
+              },
+				"department": {
+                "type": "string",
+                "description": "testing point uuid" 
+              },
+              "itemBatch": {
+                  "type": "string",
+                "description": "item uuid"           
+              },
+              "quantity": {
+                "type": "integer"
+              },
+              "wastage": {
+                "type": "integer"
+              },
+              "testPurpose": {
+                "type": "string",
+                "enum": ["Initial Screening", "Confirmation","Controls","Tie Breaker","Recency"] 
+              },
+			  "dataSystem": {
+                  "type": "string",
+                "description": "use mobile as value"           
+              }
+            },
+            "required": [
+              "consumptionUuid",
+              "consumptionDate",
+              "itemCode",
+              "itemName",  
+              "batchNumber",
+              "quantity",
+              "wastage",
+              "testPurpose",
+			  "dataSystem"
+            ]
+          }
+        ]
+      }
+}
