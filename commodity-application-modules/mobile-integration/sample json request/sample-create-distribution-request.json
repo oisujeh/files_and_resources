@@ -1,0 +1,20 @@
+{
+   "operationNumber":"WILL BE GENERATED",
+   "instanceType":"c264f34b-c795-4576-9928-454d1fa20e09",
+   "operationDate":"14-09-2021 12:21",
+   "source":"2741bae2-c5de-43ef-891f-7ec2fd58f442",
+   "department":"8eb2330d-7970-41b7-8240-b07d4534c923",
+   "items":[
+      {
+         "calculatedExpiration":true,
+         "item":"7559842c-0599-429d-90b5-e5935d0cd720",
+         "quantity":20,
+         "itemBatch":"9YYT63HHS",
+         "expiration":"02-11-2022"
+      }
+   ],
+   "status":"NEW",
+   "commoditySource":"PEPFAR",
+   "commodityType":"lab",
+   "dataSystem":"emr"
+}
