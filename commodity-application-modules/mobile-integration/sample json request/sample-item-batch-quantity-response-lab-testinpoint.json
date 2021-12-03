@@ -1,0 +1,34 @@
+{
+    "results":[
+        {
+            "item":{
+                "uuid":"06d5326c-b994-4d2f-a57a-4fe8755dc1a3",
+                "name":"Determine(100)",
+                "description":"Determine for 100 test per pack",
+                "retired":false,
+                "retireReason":null,
+                "attributes":[],
+                "codes":[],
+                "department":null,
+                "hasExpiration":true,
+                "defaultExpirationPeriod":null,
+                "hasPhysicalInventory":true,
+                "minimumQuantity":null,
+                "unitOfMeasure":"test",
+                "packSize":100,
+                "strength":null,
+                "regimenLine":null,
+                "itemType":"lab",
+                "concept":null,
+                "resourceVersion":"1.8"
+            },
+            "expiration":"2021-11-30T00:00:00.000+0100",
+            "quantity":220,
+            "actualQuantity":null,
+            "itemBatch":"65464656",
+            "reasonForChange":null,
+            "pharmStockOnHandId":1
+        }
+    ],
+    "length":1
+}
