@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operationNumber": {
+      "type": "string",
+	  "description": "This is auto-generated when you pass the text 'WILL BE GENERATED' "
+    },
+    "instanceType": {
+      "type": "string",
+	   "description": "This is the operation type uuid, e.g Receipt and Distribution, the uuid is stored in the mapping file"
+    },
+    "operationDate": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string",
+	  "description": "This is the uuid of the stockroom"
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "calculatedExpiration": {
+              "type": "boolean"
+            },
+            "item": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "itemBatch": {
+              "type": "string"
+            },
+            "expiration": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "calculatedExpiration",
+            "item",
+            "quantity",
+            "itemBatch",
+            "expiration"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "string",
+	   "enum": [ "NEW" ] 
+    },
+    "commoditySource": {
+      "type": "string",
+	  "enum": ["PEPFAR", "GF", "other donors","GON"] 
+    },
+    "commodityType": {
+      "type": "string",
+	  "enum": [ "lab","pharmacy" ] 
+    },
+    "dataSystem": {
+      "type": "string",
+	  "enum": [ "mobile" ] 
+    }
+  },
+  "required": [
+    "operationNumber",
+    "instanceType",
+    "operationDate",
+    "destination",
+    "items",
+    "status",
+    "commoditySource",
+    "commodityType",
+    "dataSystem"
+  ]
+}

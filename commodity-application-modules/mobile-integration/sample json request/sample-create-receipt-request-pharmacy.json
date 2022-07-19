@@ -1,0 +1,26 @@
+{
+    "operationNumber":"WILL BE GENERATED",
+    "instanceType":"fce0b4fc-9402-424a-aacb-f99599e51a9f",
+    "operationDate":"28-11-2021 00:06",
+    "destination":"5452ec3e-2fe1-46de-8a6e-28c6442e4cc0",
+    "institution":"",
+    "department":"",
+    "items":[
+        {
+            "calculatedExpiration":true,
+            "item":"ff3d8ada-775d-11eb-9439-0242ac130002",
+            "quantity":1,
+            "itemBatch":"6544565",
+            "itemDrugType":"Adult ART",
+            "expiration":"30-11-2021"
+        }
+    ],
+    "status":"NEW",
+    "patient":"",
+    "disposedType":"",
+    "adjustmentKind":"",
+    "commoditySource":"PEPFAR",
+    "commodityType":"pharmacy",
+    "dataSystem":"mobile",
+    "attributes":[]
+}

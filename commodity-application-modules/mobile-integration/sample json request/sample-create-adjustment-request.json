@@ -1,0 +1,25 @@
+{
+    "operationNumber":"WILL BE GENERATED",
+    "instanceType":"288fd7fe-1374-4f7a-89e6-d5f1ac97d4a5",
+    "operationDate":"01-11-2021 13:36",
+    "destination":"2741bae2-c5de-43ef-891f-7ec2fd58f442",
+    "institution":"",
+    "department":"",
+    "items":[
+        {
+            "calculatedExpiration":true,
+            "item":"06d5326c-b994-4d2f-a57a-4fe8755dc1a3",
+            "quantity":2,
+            "itemBatch":"234322",
+            "expiration":"16-11-2021"
+        }
+    ],
+    "status":"NEW",
+    "patient":"",
+    "disposedType":"",
+    "adjustmentKind":"positive",
+    "commoditySource":"PEPFAR",
+    "commodityType":"lab",
+    "dataSystem":"mobile",
+    "attributes":[]
+}

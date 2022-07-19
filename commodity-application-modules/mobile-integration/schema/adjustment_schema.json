@@ -1,0 +1,95 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "operationNumber": {
+      "type": "string",
+	   "description": "This is auto-generated when you pass the text 'WILL BE GENERATED' "
+    },
+    "instanceType": {
+      "type": "string",
+	  "description": "This is the operation type uuid, e.g Transfer and Adjustment, the uuid is stored in the mapping file"
+    },
+    "operationDate": {
+      "type": "string"
+    },
+    "destination": {
+      "type": "string",
+	   "description": "This is uuid of the destination stookroom, the uuid is stored in the mapping file"
+    },
+    "institution": {
+      "type": "string",
+	   "description": "This is the uuid of the institution (dataim code) the uuid is stored in the mapping file"
+    },
+    "department": {
+      "type": "string",
+	   "description": "This is the uuid of the testing point the uuid is stored in the mapping file"
+    },
+    "items": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "calculatedExpiration": {
+              "type": "boolean"
+            },
+            "item": {
+              "type": "string"
+            },
+            "quantity": {
+              "type": "integer"
+            },
+            "itemBatch": {
+              "type": "string"
+            },
+            "expiration": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "calculatedExpiration",
+            "item",
+            "quantity",
+            "itemBatch",
+            "expiration"
+          ]
+        }
+      ]
+    },
+    "status": {
+      "type": "string",
+	    "enum": [ "NEW" ] 
+    },
+    "patient": {
+      "type": "string"
+    },
+    "disposedType": {
+      "type": "string"
+    },
+    "adjustmentKind": {
+      "type": "string"
+    },
+    "commoditySource": {
+      "type": "string"
+    },
+    "commodityType": {
+      "type": "string"
+    },
+    "dataSystem": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "operationNumber",
+    "instanceType",
+    "operationDate",
+    "source",
+    "institution",
+    "items",
+    "status",
+    "commoditySource",
+    "commodityType",
+    "dataSystem"
+  ]
+}
