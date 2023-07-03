@@ -30,3 +30,13 @@ Version 1.0.3
 Version 1.0.3.1
 1. bug fix on viral load result field not accepting decimals
 2. updates on result retrieval page.
+
+
+Version 1.0.4
+1. Bug fix on Inability to generate manifest if schedule pickup date is omitted.
+2. Bug Fix on date filter for sample searching does not pull all samples.
+3. Bug fix issue on some dates on the result response from LIMS having dates like '1970-01-01'. (we are following up with the LIMS team on this).
+4. Update the LIMS-EMR module to update all new data fields on the Lab order form, such approval date, date assay and result date.
+5. Implement alpha-numeric test result as agreed on the EMR to work same way for LIMS-EMR module.
+6. Fix sample order issue.
+
